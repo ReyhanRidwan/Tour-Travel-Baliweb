@@ -23,22 +23,22 @@ export default function Footer({ setActivePage, onOpenBooking }: FooterProps) {
             <div className="flex items-center space-x-3" id="footer-logo">
               <div className="w-11 h-11 rounded-lg bg-stone-900 border border-stone-800 flex items-center justify-center overflow-hidden">
                 <img
-                  src="https://res.cloudinary.com/di6ziqvtp/image/upload/v1783265098/05bd8ea9-fecb-4321-b431-7b421b7db305.png"
-                  alt="TourTravelBali Logo"
+                  src="https://res.cloudinary.com/di6ziqvtp/image/upload/v1783424376/e7dfd9a7-2e5a-47c0-95f4-b422c8e0d372.png"
+                  alt="Sunset Dewata Trans Logo"
                   className="w-full h-full object-contain p-1.5"
                   referrerPolicy="no-referrer"
                 />
               </div>
               <div className="flex flex-col text-left">
                 <span className="font-serif text-white text-base font-bold tracking-wider leading-none">
-                  TourTravelBali
+                  Sunset Dewata Trans
                 </span>
                 <span className="text-[9px] tracking-[0.2em] text-amber-500/80 font-mono mt-0.5">PREMIUM BALI TRAVEL</span>
               </div>
             </div>
 
             <p className="text-stone-400 text-xs md:text-sm font-sans leading-relaxed">
-              TourTravelBali adalah biro perjalanan wisata premium terpercaya di Bali. Kami mengedepankan keamanan maksimal, armada VIP steril prima, dan asuransi jiwa komprehensif demi kebahagiaan paripurna liburan Anda.
+              Sunset Dewata Trans adalah biro perjalanan wisata premium terpercaya di Bali. Kami mengedepankan keamanan maksimal, armada VIP steril prima, dan asuransi jiwa komprehensif demi kebahagiaan paripurna liburan Anda.
             </p>
 
             {/* Social media handles */}
@@ -48,7 +48,7 @@ export default function Footer({ setActivePage, onOpenBooking }: FooterProps) {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 rounded-full bg-stone-900 border border-stone-800 hover:border-amber-500 hover:text-amber-500 flex items-center justify-center transition-colors text-stone-400 cursor-pointer"
-                aria-label="Instagram TourTravelBali"
+                aria-label="Instagram Sunset Dewata Trans"
               >
                 <Instagram className="w-4 h-4" />
               </a>
@@ -57,7 +57,7 @@ export default function Footer({ setActivePage, onOpenBooking }: FooterProps) {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 rounded-full bg-stone-900 border border-stone-800 hover:border-amber-500 hover:text-amber-500 flex items-center justify-center transition-colors text-stone-400 cursor-pointer"
-                aria-label="Facebook TourTravelBali"
+                aria-label="Facebook Sunset Dewata Trans"
               >
                 <Facebook className="w-4 h-4" />
               </a>
@@ -66,7 +66,7 @@ export default function Footer({ setActivePage, onOpenBooking }: FooterProps) {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 rounded-full bg-stone-900 border border-stone-800 hover:border-amber-500 hover:text-amber-500 flex items-center justify-center transition-colors text-stone-400 cursor-pointer"
-                aria-label="Youtube TourTravelBali"
+                aria-label="Youtube Sunset Dewata Trans"
               >
                 <Youtube className="w-4 h-4" />
               </a>
@@ -82,7 +82,6 @@ export default function Footer({ setActivePage, onOpenBooking }: FooterProps) {
                 { id: 'about', label: 'Tentang Kami (Profil)' },
                 { id: 'packages', label: 'Katalog Paket Wisata' },
                 { id: 'services', label: 'Sewa Mobil & Motor' },
-                { id: 'why', label: 'Keunggulan & Armada' },
                 { id: 'gallery', label: 'Galeri Dokumentasi' },
               ].map((item) => (
                 <li key={item.id}>
@@ -109,12 +108,12 @@ export default function Footer({ setActivePage, onOpenBooking }: FooterProps) {
 
               <li className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-amber-500 flex-shrink-0" />
-                <span>+62 813-3966-9957 (Layanan WhatsApp VIP)</span>
+                <span>+62 812-3920-0201 (Layanan WhatsApp VIP)</span>
               </li>
 
               <li className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-amber-500 flex-shrink-0" />
-                <span>info@tourtravelbali.com</span>
+                <span>info@sunsetdewatatrans.com</span>
               </li>
             </ul>
 
@@ -134,7 +133,7 @@ export default function Footer({ setActivePage, onOpenBooking }: FooterProps) {
           {/* Copyright */}
           <div className="text-center md:text-left space-y-1">
             <span className="block font-sans">
-              © 2026 <strong className="text-stone-300 font-semibold">TourTravelBali</strong>. Seluruh Hak Cipta Dilindungi.
+              © 2026 <strong className="text-stone-300 font-semibold">Sunset Dewata Trans</strong>. Seluruh Hak Cipta Dilindungi.
             </span>
             <span className="block text-[10px] text-stone-600 font-mono">
               Premium Tour Operator • Member of Nurrbalitravel Group • Licensed Tourism Board Bali

@@ -38,7 +38,6 @@ export default function Navbar({ activePage, setActivePage, onOpenBooking }: Nav
     { id: 'about', label: 'TENTANG KAMI' },
     { id: 'packages', label: 'PAKET TOUR' },
     { id: 'services', label: 'LAYANAN & SEWA' },
-    { id: 'why', label: 'KEUNGGULAN' },
     { id: 'gallery', label: 'GALERI' },
   ];
 
@@ -70,8 +69,8 @@ export default function Navbar({ activePage, setActivePage, onOpenBooking }: Nav
               id="nav-logo"
             >
               <img
-                src="https://res.cloudinary.com/di6ziqvtp/image/upload/v1783265098/05bd8ea9-fecb-4321-b431-7b421b7db305.png"
-                alt="TourTravelBali"
+                src="https://res.cloudinary.com/di6ziqvtp/image/upload/v1783424376/e7dfd9a7-2e5a-47c0-95f4-b422c8e0d372.png"
+                alt="Sunset Dewata Trans"
                 className="h-10 md:h-12 w-auto object-contain transition-transform duration-500 group-hover:scale-105"
                 referrerPolicy="no-referrer"
               />

@@ -13,7 +13,7 @@ export default function AboutSection() {
     {
       name: 'Bpk. Adisurya Prasetyo',
       role: 'Keluarga Premium Tour (Jakarta)',
-      text: 'Pelayanan TourTravelBali luar biasa! Innova Zenix-nya wangi sekali, bersih, supirnya sangat profesional merangkap fotografer andal. Jadwal perjalanan diatur rapi sehingga tidak capek bersama anak-anak.',
+      text: 'Pelayanan Sunset Dewata Trans luar biasa! Innova Zenix-nya wangi sekali, bersih, supirnya sangat profesional merangkap fotografer andal. Jadwal perjalanan diatur rapi sehingga tidak capek bersama anak-anak.',
       rating: 5,
     },
     {
@@ -32,7 +32,7 @@ export default function AboutSection() {
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <span className="text-amber-600 font-mono text-xs tracking-widest uppercase">OUR STORY & VALUES</span>
           <h2 className="font-serif text-3xl md:text-5xl font-bold text-stone-900 tracking-tight">
-            Tentang TourTravelBali
+            Tentang Sunset Dewata Trans
           </h2>
           <div className="w-16 h-0.5 bg-amber-500 mx-auto mt-4" />
           <p className="text-stone-600 text-sm md:text-base leading-relaxed">
@@ -80,7 +80,7 @@ export default function AboutSection() {
                 Menyajikan Kebahagiaan Lewat Setiap Mil Perjalanan
               </h3>
               <p className="text-stone-600 leading-relaxed font-sans text-sm md:text-base">
-                TourTravelBali didirikan atas satu filosofi sederhana: <strong>kebahagiaan Anda adalah pencapaian tertinggi kami</strong>. Kami percaya bahwa liburan di Bali bukan sekadar berpindah dari satu tempat ke tempat lain, melainkan sebuah rangkaian pengalaman batin yang mendalam, tenang, dan berkesan.
+                Sunset Dewata Trans didirikan atas satu filosofi sederhana: <strong>kebahagiaan Anda adalah pencapaian tertinggi kami</strong>. Kami percaya bahwa liburan di Bali bukan sekadar berpindah dari satu tempat ke tempat lain, melainkan sebuah rangkaian pengalaman batin yang mendalam, tenang, dan berkesan.
               </p>
               <p className="text-stone-600 leading-relaxed font-sans text-sm md:text-base">
                 Dengan dedikasi penuh pada kualitas armada terawat, asuransi perjalanan lengkap, dan supir bersertifikasi pariwisata resmi, kami memastikan setiap tamu dilayani selayaknya tamu kehormatan.
@@ -183,7 +183,7 @@ export default function AboutSection() {
                 <h3 className="font-serif text-lg font-bold">Lokasi Head Office Kami</h3>
               </div>
               <p className="text-stone-600 text-xs md:text-sm font-sans">
-                Kunjungi kantor perwakilan TourTravelBali untuk konsultasi rencana perjalanan premium Anda secara tatap muka dengan Travel Consultant kami.
+                Kunjungi kantor perwakilan Sunset Dewata Trans untuk konsultasi rencana perjalanan premium Anda secara tatap muka dengan Travel Consultant kami.
               </p>
               
               {/* Elegant Simulated Earthy Map */}
@@ -213,7 +213,7 @@ export default function AboutSection() {
                     </div>
                   </div>
                   <div className="bg-stone-950 text-white text-[9px] font-mono font-bold py-1 px-2.5 rounded-lg border border-stone-800 shadow-2xl mt-2 tracking-wider uppercase whitespace-nowrap">
-                    TOURTRAVELBALI HQ
+                    SUNSET DEWATA TRANS HQ
                   </div>
                 </div>
 

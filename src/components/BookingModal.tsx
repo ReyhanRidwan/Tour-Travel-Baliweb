@@ -225,7 +225,7 @@ export default function BookingModal({ isOpen, onClose, preselectedId }: Booking
 
     const textToPay = booking.paymentType === 'dp' ? invoice.dpAmount : invoice.grandTotal;
 
-    const messageTemplate = `Swastyastu, Admin TourTravelBali! 🌴✨
+    const messageTemplate = `Swastyastu, Admin Sunset Dewata Trans! 🌴✨
 Saya ingin mengonfirmasi pesanan tiket premium dengan detail sebagai berikut:
 
 🆔 Kode Tiket: ${booking.bookingCode}
@@ -239,10 +239,10 @@ Saya ingin mengonfirmasi pesanan tiket premium dengan detail sebagai berikut:
 💳 Metode Bayar: ${booking.paymentType === 'dp' ? 'DP 30%' : 'Full 100%'} via ${booking.isPaid ? 'Midtrans Gateway (Lunas)' : 'Transfer Bank (Menunggu)'}
 💵 TOTAL TRANSFER: ${formatIDR(textToPay)}
 
-Mohon segera diverifikasi dan diproses. Terima kasih! 🙏 vendor: tourtravelbali`;
+Mohon segera diverifikasi dan diproses. Terima kasih! 🙏 vendor: sunsetdewatatrans`;
 
     const encodedMessage = encodeURIComponent(messageTemplate);
-    window.open(`https://wa.me/6281339669957?text=${encodedMessage}`, '_blank');
+    window.open(`https://wa.me/6281239200201?text=${encodedMessage}`, '_blank');
   };
 
   const stepTitles = [
@@ -397,7 +397,7 @@ Mohon segera diverifikasi dan diproses. Terima kasih! 🙏 vendor: tourtravelbal
             </div>
             <div>
               <h3 className="font-serif font-bold text-sm md:text-base text-stone-100">Registrasi Premium Trip</h3>
-              <span className="text-[10px] text-amber-500/80 font-mono tracking-widest uppercase block mt-0.5">tourtravelbali</span>
+              <span className="text-[10px] text-amber-500/80 font-mono tracking-widest uppercase block mt-0.5">sunsetdewatatrans</span>
             </div>
           </div>
           <button
@@ -497,29 +497,40 @@ Mohon segera diverifikasi dan diproses. Terima kasih! 🙏 vendor: tourtravelbal
                       <div
                         key={pkg.id}
                         onClick={() => setBooking((prev) => ({ ...prev, selectedItem: pkg.id }))}
-                        className={`p-3.5 rounded-2xl border text-left transition-all duration-300 cursor-pointer flex flex-col justify-between h-44 ${
+                        className={`rounded-2xl border text-left overflow-hidden transition-all duration-300 cursor-pointer flex flex-col justify-between ${
                           isSelected
-                            ? 'border-amber-500 bg-amber-500/5 ring-2 ring-amber-500/20'
-                            : 'border-stone-200 hover:border-stone-400 bg-stone-50 hover:bg-white'
+                            ? 'border-amber-500 bg-amber-500/5 ring-2 ring-amber-500/20 shadow-md'
+                            : 'border-stone-200 hover:border-stone-400 bg-stone-50 hover:bg-white shadow-sm'
                         }`}
                       >
-                        <div className="space-y-1">
-                          <span className="text-[8px] font-mono font-bold uppercase tracking-widest text-stone-400 block">
+                        {/* Option Image Header */}
+                        <div className="h-28 w-full relative overflow-hidden bg-stone-100">
+                          <img
+                            src={pkg.image}
+                            alt={pkg.name}
+                            className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                            referrerPolicy="no-referrer"
+                          />
+                          <span className="absolute top-2 right-2 bg-stone-900/80 backdrop-blur-xs text-[8px] font-mono font-bold uppercase tracking-widest text-amber-400 py-0.5 px-2 rounded-full border border-stone-800/50">
                             {pkg.category}
                           </span>
+                        </div>
+
+                        {/* Content Body */}
+                        <div className="p-3.5 flex flex-col justify-between flex-grow space-y-3">
                           <h5 className="font-serif text-xs md:text-sm font-bold text-stone-900 line-clamp-2 leading-snug">
                             {pkg.name}
                           </h5>
-                        </div>
 
-                        <div className="space-y-1.5 mt-2">
-                          <span className="text-[8px] font-mono text-stone-400 block">TARIF DASAR</span>
-                          <span className="text-xs font-bold text-stone-950 block">
-                            {formatIDR(pkg.price)}
-                            <span className="text-[9px] font-normal text-stone-500">
-                              {pkg.type === 'package' ? ' /pax' : pkg.type === 'rental' ? ' /hari' : ' /trip'}
+                          <div className="space-y-1">
+                            <span className="text-[8px] font-mono text-stone-400 block">TARIF DASAR</span>
+                            <span className="text-xs font-bold text-stone-950 block">
+                              {formatIDR(pkg.price)}
+                              <span className="text-[9px] font-normal text-stone-500">
+                                {pkg.type === 'package' ? ' /pax' : pkg.type === 'rental' ? ' /hari' : ' /trip'}
+                              </span>
                             </span>
-                          </span>
+                          </div>
                         </div>
                       </div>
                     );
@@ -745,7 +756,7 @@ Mohon segera diverifikasi dan diproses. Terima kasih! 🙏 vendor: tourtravelbal
                 <div className="bg-stone-50 p-6 md:p-8 rounded-3xl border border-stone-200 space-y-4 max-w-xl mx-auto shadow-sm">
                   <div className="flex justify-between items-center border-b border-stone-200 pb-3">
                     <div>
-                      <span className="font-serif font-bold text-sm text-stone-900">tourtravelbali</span>
+                      <span className="font-serif font-bold text-sm text-stone-900">sunsetdewatatrans</span>
                       <span className="block text-[9px] text-stone-400 font-mono">TAX INVOICE GENERATOR</span>
                     </div>
                     <span className="bg-amber-500/10 text-amber-600 font-mono text-[10px] font-bold py-1 px-3 rounded-full border border-amber-500/20">

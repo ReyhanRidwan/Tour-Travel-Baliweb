@@ -6,7 +6,6 @@ import BentoGrid from './components/BentoGrid';
 import AboutSection from './components/AboutSection';
 import PackagesSection from './components/PackagesSection';
 import ServicesSection from './components/ServicesSection';
-import WhySection from './components/WhySection';
 import GallerySection from './components/GallerySection';
 import BookingModal from './components/BookingModal';
 import Footer from './components/Footer';
@@ -93,10 +92,6 @@ export default function App() {
                   <ServicesSection onOpenBooking={handleOpenBooking} />
                 </div>
 
-                <div id="home-why" className="border-t border-stone-200/40">
-                  <WhySection />
-                </div>
-
                 <div id="home-gallery" className="border-t border-stone-200/40">
                   <GallerySection />
                 </div>
@@ -119,12 +114,6 @@ export default function App() {
             {activePage === 'services' && (
               <div className="pt-24">
                 <ServicesSection onOpenBooking={handleOpenBooking} />
-              </div>
-            )}
-
-            {activePage === 'why' && (
-              <div className="pt-24">
-                <WhySection />
               </div>
             )}
 
